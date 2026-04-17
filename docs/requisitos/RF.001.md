@@ -1,6 +1,6 @@
 # Cadastro de Ala
 
-**COMO** Gerente Hospitalar,   
+**COMO** Gerente Hospitalar e Administrador Geral,   
 **QUERO** cadastrar uma nova ala hospitalar  
 **PARA** que eu possa organizar os leitos por setor/ala e manter a estrutura física do hospital atualizada no sistema.   
 
