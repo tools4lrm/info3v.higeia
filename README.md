@@ -11,7 +11,8 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
 
- - 10.04.2026 - Aula : [Configuração de Ambiente e Projeto](docs/aulas/10.04.md)
+ - 10.04.2026 - Aula : [Configuração de Ambiente e Projeto - PARTE1](docs/aulas/10.04.md)
+ - 17.04.2026 - Aula : [Configuração de Ambiente e Projeto - PARTE2](docs/aulas/17.04.md)
 
 ## Uma Breve Descrição do Contexto / Problema
 
