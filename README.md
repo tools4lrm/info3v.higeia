@@ -10,7 +10,8 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 (ver [Modelo de Desenvolvimento de Software Interativo e Incremental](https://pt.wikipedia.org/wiki/Desenvolvimento_iterativo_e_incremental)). 
 
 ### Notas de Aula
- 
+
+ - 24.04.2026 - Aula : [Ajustes da Configuração de Ambiente e Clonando o Projeto](docs/aulas/24.04.md)
  - 17.04.2026 - Aula : [Configuração do Ambiente de Desenvolvimento](docs/aulas/17.04.md)
  - 10.04.2026 - Aula : [Configuração de Ambiente e Projeto - PARTE1](docs/aulas/10.04.md)
 
