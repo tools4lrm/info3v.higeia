@@ -11,6 +11,8 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
 
+ - 08.05.2026 - Aula Prática*: [Construindo o projeto JAVA MAVEN e Sincronizando com o GitHub](docs/aulas/08.05.md)
+ - 01.05.2026 - Feriado
  - 24.04.2026 - Aula Prática: [Ajustes da Configuração de Ambiente e Clonando o Projeto](docs/aulas/24.04.p.md)
  - 24.04.2026 - Aula Conceitual* : [Introdução ao Git / GitHub](docs/aulas/24.04.c.md) 
  - 17.04.2026 - Aula : [Configuração do Ambiente de Desenvolvimento](docs/aulas/17.04.md)
