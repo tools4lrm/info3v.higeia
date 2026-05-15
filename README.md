@@ -11,6 +11,7 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
 
+ - 15.05.2026 - Aula Prática/Teórica*: [Projetando e Implementando o REQ.001 e REQ.002 do Projeto](docs/aulas/15.05.md)
  - 08.05.2026 - Aula Prática*: [Construindo o projeto JAVA MAVEN e Sincronizando com o GitHub](docs/aulas/08.05.md)
  - 01.05.2026 - Feriado
  - 24.04.2026 - Aula Prática: [Ajustes da Configuração de Ambiente e Clonando o Projeto](docs/aulas/24.04.p.md)
