@@ -11,7 +11,7 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
 
- - 29.05.2026 - Prova e Entrega as Atividades Práticas
+ - 29.05.2026 - Prova e Entrega das Atividades Práticas
  - 22.05.2026 - Aula Prática/Teórica* : [Projetando e Implementando o REQ.003, REQ.004 e REQ.005 do Projeto](docs/aulas/22.05.md)
  - 15.05.2026 - Aula Prática/Teórica*: [Projetando e Implementando o REQ.001 e REQ.002 do Projeto](docs/aulas/15.05.md)
  - 08.05.2026 - Aula Prática*: [Construindo o projeto JAVA MAVEN e Sincronizando com o GitHub](docs/aulas/08.05.md)
