@@ -1,7 +1,7 @@
 package br.edu.ifrn;
 
-import br.edu.ifrn.br.edu.ifrn.higeia.servico.AlaService;
 import br.edu.ifrn.higeia.modelo.Ala;
+import br.edu.ifrn.higeia.servico.AlaService;
 
 public class Main {
     public static void main(String[] args) {

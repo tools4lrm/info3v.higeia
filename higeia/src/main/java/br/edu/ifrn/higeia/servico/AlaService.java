@@ -1,4 +1,4 @@
-package br.edu.ifrn.br.edu.ifrn.higeia.servico;
+package br.edu.ifrn.higeia.servico;
 
 import br.edu.ifrn.higeia.modelo.Ala;
 
