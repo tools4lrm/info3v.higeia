@@ -1,6 +1,9 @@
 package br.edu.ifrn.higeia.servico;
 
+import java.util.List;
+
 import br.edu.ifrn.higeia.modelo.Ala;
+import br.edu.ifrn.higeia.repositorio.AlaRepositorio;
 
 /**
  * Classe responsável pelas regras de negócio relacionadas às Alas.
@@ -8,26 +11,37 @@ import br.edu.ifrn.higeia.modelo.Ala;
  */
 public class AlaService {
 
-    /**
-     * Realiza o cadastro de uma nova ala validando os requisitos mínimos.
-     * @param novaAla Objeto Ala preenchido
-     * @throws IllegalArgumentException Caso os critérios de aceitação não sejam atendidos.
-     */
-    public void cadastrarAla(Ala novaAla) {
-        
-        // Critério de Aceitação REQ.001: Validar que o número de leitos é maior que zero
-        if (novaAla.getCapacidadeMax() <= 0) {
-            throw new IllegalArgumentException("Erro: O número máximo de leitos deve ser maior que zero!");
-        }
+    private final AlaRepositorio repositorio = new AlaRepositorio();
 
-        // Critério de Aceitação REQ.001: Impedir nomes vazios ou nulos (Boa prática)
-        if (novaAla.getNome() == null || novaAla.getNome().trim().isEmpty()) {
-            throw new IllegalArgumentException("Erro: O nome ou código da ala é obrigatório!");
+    public void salvarNovaAla(Ala ala) {
+        if (ala.getNome() == null || ala.getNome().trim().isEmpty()) {
+            throw new IllegalArgumentException("Erro de Regra: O nome da ala é obrigatório.");
         }
+        if (ala.getCapacidadeMax() <= 0) {
+            throw new IllegalArgumentException("Erro de Regra: A capacidade deve ser positiva.");
+        }
+        repositorio.inserir(ala);
+    }
 
-        // Simulação de salvamento
-        System.out.println("Processando cadastro...");
-        System.out.println("Ala '" + novaAla.getNome() + "' validada e registrada com sucesso!");
+    public List<Ala> listarAlasDoHospital() {
+        return repositorio.selecionarTodas();
+    }
+
+    public void alterarDadosAla(Ala ala) {
+        if (ala.getId() == null) {
+            throw new IllegalArgumentException("Erro de Regra: Não é possível atualizar um registro sem ID.");
+        }
+        if (ala.isLotada()) {
+            System.out.println("LOG ALERTA: A ala '" + ala.getNome() + "' atingiu a lotação máxima!");
+        }
+        repositorio.atualizar(ala);
+    }
+
+    public void removerAlaDoHospital(Long id) {
+        if (id == null) {
+            throw new IllegalArgumentException("Erro de Regra: ID inválido para exclusão.");
+        }
+        repositorio.excluir(id);
     }
 
     /**

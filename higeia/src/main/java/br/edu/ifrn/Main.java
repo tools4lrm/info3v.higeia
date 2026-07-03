@@ -5,29 +5,27 @@ import br.edu.ifrn.higeia.servico.AlaService;
 
 public class Main {
     public static void main(String[] args) {
-       // 1. Instanciando o serviço e o objeto
-        AlaService service = new AlaService();
-        
-        Ala alaUti = new Ala();
-        alaUti.setNome("UTI Cardiovascular");
-        alaUti.setCapacidadeMax(10);
-        alaUti.setLeitosOcupados(8);
+        AlaService alaService = new AlaService();
 
-        // 2. Testando a Regra de Negócio (REQ.001)
-        System.out.println("--- Teste de Cadastro ---");
-        try {
-            service.cadastrarAla(alaUti);
-        } catch (Exception e) {
-            System.err.println("Erro ao cadastrar: " + e.getMessage());
-        }
+        System.out.println("\n--- [C] - INSERINDO Alas no MySQL (Pré-criado via Workbench) ---");
+        Ala ala1 = new Ala("Maternidade", 5);
+        Ala ala2 = new Ala("Isolamento Clínico", 3);
 
-        // 3. Testando a Visualização e Cálculos (REQ.002)
-        service.exibirStatusAla(alaUti);
+        alaService.salvarNovaAla(ala1);
+        alaService.salvarNovaAla(ala2);
         
-        if (alaUti.isLotada()) {
-            System.out.println("Atenção: Esta ala está LOTADA!");
-        } else {
-            System.out.println("Status: Há leitos disponíveis.");
-        }
+        System.out.println("\n--- [R] - SELECIONANDO e exibindo os registros ---");
+        alaService.listarAlasDoHospital().forEach(System.out::println);
+
+        System.out.println("\n--- [U] - ATUALIZANDO e Modificando Dados (Regra REQ.002) ---");
+        ala2.setLeitosOcupados(3); // Alterando estado do objeto para lotado
+        alaService.alterarDadosAla(ala2); 
+        alaService.listarAlasDoHospital().forEach(System.out::println);
+
+        System.out.println("\n--- [D] - EXCLUINDO um registro do MySQL ---");
+        alaService.removerAlaDoHospital(ala1.getId()); 
+        
+        System.out.println("\nEstado final da tabela no MySQL:");
+        alaService.listarAlasDoHospital().forEach(System.out::println);
     }
 }
