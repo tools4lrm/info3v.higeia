@@ -11,6 +11,9 @@ Nesse período, os encontros serão utilizados para compreendermos o conteúdo d
 
 ### Notas de Aula
 
+ - 17.07.2026 - Entrega do Projeto
+ - 10.07.2026 - Aula Prática (Laboratório) : Projeto
+ - 03.07.2026 - Aula Prática/Teórica* : [Evoluindo a Arquitetura do Sistema Higeia ( com MySQL )](docs/aulas/03.07.md)
  - 29.05.2026 - Prova e Entrega das Atividades Práticas
  - 22.05.2026 - Aula Prática/Teórica* : [Projetando e Implementando o REQ.003, REQ.004 e REQ.005 do Projeto](docs/aulas/22.05.md)
  - 15.05.2026 - Aula Prática/Teórica*: [Projetando e Implementando o REQ.001 e REQ.002 do Projeto](docs/aulas/15.05.md)
